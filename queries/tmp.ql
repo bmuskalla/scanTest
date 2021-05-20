@@ -13,4 +13,4 @@ where call.getMethod() = method
   and method.getDeclaringType().hasQualifiedName("java.io", "File")
   and stringExpression = call.getArgument(0).(CompileTimeConstantExpr).getStringValue()
   and stringExpression.length() < 10
-select call.getArgument(0), stringExpression,  "Argument too short"
+select call.getArgument(0), "Argument too short"
