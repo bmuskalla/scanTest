@@ -1,3 +1,10 @@
+/**
+ * @name Short param for tmp
+ * @kind problem
+ * @problem.severity error
+ * @id benny/tmp
+ */
+ 
 import java
 
 from MethodAccess call, Method method, string stringExpression
