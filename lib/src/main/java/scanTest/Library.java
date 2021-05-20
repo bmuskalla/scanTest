@@ -3,8 +3,18 @@
  */
 package scanTest;
 
+import java.io.File;
+import java.io.IOException;
+
 public class Library {
-    public boolean someLibraryMethod() {
+    public boolean someLibraryMethod()  {
+        try {
+            File.createTempFile("a", null);
+            File.createTempFile("a" + "b", null);
+            File.createTempFile("aaaaaaaaakjajakjakajakjab", null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return true;
     }
 }
